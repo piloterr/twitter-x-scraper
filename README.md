@@ -70,7 +70,7 @@ response = requests.get(
     params={
         "query": "https://x.com/example-user/status/0000000000000000001",
     },
-    timeout=60,
+    timeout=120,
 )
 response.raise_for_status()
 data = response.json()
@@ -188,7 +188,7 @@ response = requests.get(
     params={
         "query": "elonmusk",
     },
-    timeout=60,
+    timeout=120,
 )
 response.raise_for_status()
 data = response.json()

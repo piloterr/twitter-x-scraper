@@ -3,6 +3,6 @@
 # Usage: PILOTERR_API_KEY=your-key ./post_info.sh
 set -euo pipefail
 
-curl -sS -G "https://api.piloterr.com/v2/x/post/info" \
+curl -sS --fail-with-body -G "https://api.piloterr.com/v2/x/post/info" \
   -H "x-api-key: ${PILOTERR_API_KEY}" \
   --data-urlencode query=https://x.com/example-user/status/0000000000000000001
