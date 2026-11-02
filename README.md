@@ -68,7 +68,7 @@ response = requests.get(
     "https://api.piloterr.com/v2/x/post/info",
     headers={"x-api-key": os.environ["PILOTERR_API_KEY"]},
     params={
-        "query": "https://x.com/rauchg/status/2070215849970119090",
+        "query": "https://x.com/example-user/status/0000000000000000001",
     },
     timeout=60,
 )
@@ -97,7 +97,7 @@ type XPostInfo = {
 };
 
 const params = new URLSearchParams({
-  "query": "https://x.com/rauchg/status/2070215849970119090",
+  "query": "https://x.com/example-user/status/0000000000000000001",
 });
 
 const response = await fetch(`https://api.piloterr.com/v2/x/post/info?${params}`, {
@@ -118,7 +118,7 @@ POST https://api.piloterr.com/v2/x/post/info
 x-api-key: YOUR_API_KEY
 Content-Type: application/json
 
-{"query": "https://x.com/rauchg/status/2070215849970119090"}
+{"query": "https://x.com/example-user/status/0000000000000000001"}
 ```
 </details>
 
@@ -347,7 +347,7 @@ Any language that can make an HTTP request. This README shows Python and TypeScr
 - [Patreon Scraper API](https://github.com/piloterr/patreon-scraper)
 - [Pinterest Scraper API](https://github.com/piloterr/pinterest-scraper)
 - [TikTok Top Ads Scraper API](https://github.com/piloterr/tiktoktopads-scraper)
-- [weibo-scraper](https://github.com/piloterr/weibo-scraper)
+- [Weibo Scraper API](https://github.com/piloterr/weibo-scraper)
 - [All Piloterr scrapers on GitHub](https://github.com/piloterr)
 
 ## Support

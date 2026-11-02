@@ -3,7 +3,7 @@
 // Usage: PILOTERR_API_KEY=your-key php post_info.php
 
 $params = http_build_query([
-    'query' => 'https://x.com/rauchg/status/2070215849970119090',
+    'query' => 'https://x.com/example-user/status/0000000000000000001',
 ]);
 
 $ch = curl_init('https://api.piloterr.com/v2/x/post/info?' . $params);

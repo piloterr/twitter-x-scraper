@@ -10,7 +10,7 @@ using var http = new HttpClient { Timeout = TimeSpan.FromSeconds(60) };
 http.DefaultRequestHeaders.Add("x-api-key", apiKey);
 
 var query =
-    "query=" + Uri.EscapeDataString("https://x.com/rauchg/status/2070215849970119090");
+    "query=" + Uri.EscapeDataString("https://x.com/example-user/status/0000000000000000001");
 
 var response = await http.GetAsync("https://api.piloterr.com/v2/x/post/info?" + query);
 var body = await response.Content.ReadAsStringAsync();

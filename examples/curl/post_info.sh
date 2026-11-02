@@ -5,4 +5,4 @@ set -euo pipefail
 
 curl -sS -G "https://api.piloterr.com/v2/x/post/info" \
   -H "x-api-key: ${PILOTERR_API_KEY}" \
-  --data-urlencode query=https://x.com/rauchg/status/2070215849970119090
+  --data-urlencode query=https://x.com/example-user/status/0000000000000000001

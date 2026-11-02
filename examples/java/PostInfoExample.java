@@ -14,7 +14,7 @@ public class PostInfoExample {
     }
 
     public static void main(String[] args) throws Exception {
-        String query = "query=" + enc("https://x.com/rauchg/status/2070215849970119090");
+        String query = "query=" + enc("https://x.com/example-user/status/0000000000000000001");
 
         HttpRequest request = HttpRequest.newBuilder()
             .uri(URI.create("https://api.piloterr.com/v2/x/post/info?" + query))

@@ -15,7 +15,7 @@ import (
 
 func main() {
 	params := url.Values{}
-	params.Set("query", "https://x.com/rauchg/status/2070215849970119090")
+	params.Set("query", "https://x.com/example-user/status/0000000000000000001")
 
 	req, _ := http.NewRequest("GET", "https://api.piloterr.com/v2/x/post/info?"+params.Encode(), nil)
 	req.Header.Set("x-api-key", os.Getenv("PILOTERR_API_KEY"))

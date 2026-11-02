@@ -5,7 +5,7 @@ require "net/http"
 require "uri"
 
 uri = URI("https://api.piloterr.com/v2/x/post/info")
-uri.query = URI.encode_www_form('query' => 'https://x.com/rauchg/status/2070215849970119090')
+uri.query = URI.encode_www_form('query' => 'https://x.com/example-user/status/0000000000000000001')
 
 request = Net::HTTP::Get.new(uri)
 request["x-api-key"] = ENV.fetch("PILOTERR_API_KEY")

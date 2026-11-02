@@ -2,7 +2,7 @@
 // Usage: PILOTERR_API_KEY=your-key node post_info.mjs
 
 const params = new URLSearchParams({
-  "query": "https://x.com/rauchg/status/2070215849970119090",
+  "query": "https://x.com/example-user/status/0000000000000000001",
 });
 
 const response = await fetch(`https://api.piloterr.com/v2/x/post/info?${params}`, {
